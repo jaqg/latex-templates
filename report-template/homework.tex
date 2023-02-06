@@ -1,0 +1,75 @@
+\documentclass[11pt, a4paper, final]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{babel}
+\usepackage{amsmath, amssymb}
+
+% Paquetes de configuracion
+\input{./configuracion/paquetes}
+\input{./configuracion/estilo}
+\input{./configuracion/newcommands}
+\input{./configuracion/bibliography_config}
+\input{./portada/info}
+
+% \usepackage{mathpazo}
+
+\lstset{language=fortran,keywordstyle={\texttt}}
+\NewDocumentCommand{\code}{v}{%
+\texttt{#1}%
+}
+
+% \bibliography{./bibliografia/bibliografia_PE.bib}
+
+\graphicspath{{./figuras/}}
+
+\author{\authorname}
+\title{
+    \vspace{-2cm}
+    \textbf{\ttitle}
+}
+
+\hypersetup{
+pdfauthor={José Antonio Quiñonero Gris},
+pdftitle={Worksheet 4.},
+pdfsubject={Mathematical Foundation of Quantum Mechanics.},
+pdfkeywords={Quantum Chemistry, Theoretical Chemistry, Computational Chemistry, Gaussian, Diels Alder}
+}
+
+% Fecha de creación: 14 de diciembre de 2022
+% \date{}
+
+\date{\today}
+
+%
+% --- INICIO DEL DOCUMENTO ---
+%
+\begin{document}
+%
+% --- Título ---
+%
+% \thispagestyle{empty}
+% \maketitle
+% \input{portada/portada}\afterpage{\blankpage}
+% \afterpage{\blankpage}
+% \input{portada/portada}\clearpage
+\maketitle
+%
+% --- Texto ---
+%
+\input{text}
+%
+% --- Bibliografía ---
+%
+% \clearpage
+% \newpage
+% \addcontentsline{toc}{section}{Bibliografía}
+% \printbibliography[title={References}] % change from bibliography to references
+% \printbibliography
+% \nocite{*}
+% \bibliographystyle{apalike}
+% \bibliography{/home/jose/Documents/latex/preamble/references.bib}
+% \clearpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
