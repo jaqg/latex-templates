@@ -8,6 +8,7 @@
 #
 import numpy as np
 import matplotlib.pyplot as plt
+import string
 import os
 colores=['#56B4E9', '#E69F00', '#009E73', '#0072B2', '#D55E00', '#CC79A7', '#F0E442']
 #
@@ -71,6 +72,10 @@ ax.plot(t1, f(t1), 'ro', t2, f(t2), 'k')
 #
 # ax.grid(False)
 
+# Enumerate the subplots
+# for n, ax in enumerate(axs):
+#     ax.text(-0.1, 1.1, string.ascii_uppercase[n], transform=ax.transAxes,
+#             size=20, weight='bold')
 
 nombre_grafica = os.path.basename(__file__).replace(".py", ".pdf")
 plt.savefig(nombre_grafica, transparent='True', bbox_inches='tight')
