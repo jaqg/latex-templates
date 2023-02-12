@@ -39,7 +39,7 @@ t2 = np.arange(0.0, 5.0, 0.02)
 
 ax.plot(t1, f(t1), 'ro', t2, f(t2), 'k')
 
-# fig, axs = plt.subplots(1,2,figsize=(6*2,4.45), sharey=True)
+# fig, axs = plt.subplots(1,2,figsize=(7.2*1.5,4.45), sharey=True)
 # fig.subplots_adjust(left=.15, bottom=.16, right=.99, top=.97)
 
 # fig.suptitle()
