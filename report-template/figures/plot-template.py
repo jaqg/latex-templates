@@ -6,10 +6,15 @@
 #
 # Libreries
 #
+import matplotlib
+from matplotlib.lines import MarkerStyle
 import numpy as np
 import matplotlib.pyplot as plt
 import string
 import os
+
+matplotlib.use("pgf")
+
 colores=['#56B4E9', '#E69F00', '#009E73', '#0072B2', '#D55E00', '#CC79A7', '#F0E442']
 #
 # Style
@@ -17,6 +22,10 @@ colores=['#56B4E9', '#E69F00', '#009E73', '#0072B2', '#D55E00', '#CC79A7', '#F0E
 style_file = 'mine.mplstyle'
 style_file = os.path.dirname(__file__)+'/{}'.format(style_file)
 plt.style.use(style_file)
+
+# Links
+# https://jwalton.info/Embed-Publication-Matplotlib-Latex/
+# https://jwalton.info/Matplotlib-latex-PGF/
 
 #
 # Input data
@@ -79,3 +88,6 @@ ax.plot(t1, f(t1), 'ro', t2, f(t2), 'k')
 
 nombre_grafica = os.path.basename(__file__).replace(".py", ".pdf")
 plt.savefig(nombre_grafica, transparent='True', bbox_inches='tight')
+#
+nombre_grafica_2 = os.path.basename(__file__).replace(".py", ".pgf")
+plt.savefig(nombre_grafica_2, format='pgf')
