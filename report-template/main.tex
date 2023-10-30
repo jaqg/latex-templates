@@ -49,19 +49,24 @@ pdfkeywords={\kkeywords}
 %
 % 1) Simple title in the same page
 %
-\maketitle
+% \maketitle
 %
-% 2) Simple title but in a separate page
+% 2) Simple title with more info in the same page
+%
+% \thispagestyle{empty}
+\input{front-page/minimal}
+%
+% 4) Simple title but in a separate page
 %
 % \thispagestyle{empty}
 % \maketitle
 %
-% 3) A minimal titlepage
+% 4) A minimal titlepage
 %
 % \afterpage{\blankpage}
 % \input{front-page/minimal-titlepage}\clearpage
 %
-% 4) A more elaborated titlepage
+% 5) A more elaborated titlepage
 %
 % \input{front-page/elaborated-titlepage}\afterpage{\blankpage}
 %
