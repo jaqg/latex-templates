@@ -57,13 +57,16 @@
 %
 \usepackage{booktabs}
 % \usepackage{tablefootnote}
-\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}} % Spacing btween lines of table
+\usepackage{makecell}
+\usepackage{diagbox}  % diagonal cells: \diagbox[width=3em, height=3em, trim=l]{$n$}{$k$}; check https://ctan.org/pkg/diagbox/
 \usepackage{longtable}
 \usepackage{array}
 \usepackage{xtab}
 \usepackage{multirow}
 \usepackage{colortab}
 \usepackage{bigdelim}
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}} % Spacing btween lines of table
+\newcolumntype{x}[1]{>{\centering\arraybackslash}p{#1}}
 %
 % -- Listas y estilo ---
 %
@@ -72,6 +75,8 @@
 %
 % --- Matemáticas y física ---
 %
+% \usepackage{amsmath}
+% \usepackage{bm}
 \newcommand{\mat}[1]{\boldsymbol{\mathrm{#1}}}
 % \decimalpoint
 \usepackage{mathtools}
