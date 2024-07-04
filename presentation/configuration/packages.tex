@@ -35,29 +35,14 @@
 %
 \usepackage{enumerate}
 \usepackage{enumitem}
-% Reduce slide margins by doing \Wider[#em]{text} for # number
-\newcommand\Wider[2][3em]{%
-\makebox[\linewidth][c]{%
-  \begin{minipage}{\dimexpr\textwidth+#1\relax}
-  \raggedright#2
-  \end{minipage}%
-  }%
-}
 %
 % --- Matemáticas y física ---
 %
-\usepackage{amsmath}
 \newcommand{\mat}[1]{\boldsymbol{\mathrm{#1}}}
 \usepackage{mathtools}
 \usepackage[thinc]{esdiff}
 \usepackage{physics}
 \usepackage{braket}
-\usepackage{empheq}
-% \newtcbox{\mymathbox}[1][]{%
-%     nobeforeafter, math upper, tcbox raise base,
-%     standard jigsaw, sharp corners, colframe=white!45!black,
-%     colback=white!95!black, leftrule=4pt, rightrule=0pt, toprule=0pt, bottomrule=0pt,
-%     #1}
 %
 % --- Química ---
 %
