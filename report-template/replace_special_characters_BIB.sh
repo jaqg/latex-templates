@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BIB_FILE="TFM.bib"
+BIB_FILE="TFG.bib"
 TEMP_FILE=$(mktemp)
 
 # Characters to replace
