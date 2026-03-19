@@ -1,3 +1,4 @@
+% Temporarily override graphicspath for titlepage figures
 \graphicspath{{./front-page/figures/}}
 % \thispagestyle{empty}
 \begin{titlepage}
@@ -40,8 +41,10 @@
 
 % \vfill
 
-{\large Julio - Agosto de 2022}\\[4cm] % Date
+{\large \defenseDate}\\[4cm] % Date (set \defenseDate in configuration/style.tex)
 
 \vfill
 \end{center}
 \end{titlepage}
+% Restore graphicspath for the main document
+\graphicspath{{./figures/}}

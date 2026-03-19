@@ -37,7 +37,8 @@
 \newcommand{\Year}{\the\year{}}
 
 % Signature date (defaults to today).
-\newcommand{\signatureDate}{\ddmmyyyydate\today}
+% To use dd/mm/yyyy format, load the datetime2 package and use \DTMtoday.
+\newcommand{\signatureDate}{\today}
 
 % PDF Metadata
 \newcommand{\keywords}{Tunneling, Quantum Mechanics, Ammonia}
@@ -45,10 +46,4 @@
 \newcommand{\university}{Universidad de Murcia}
 \newcommand{\school}{Facultad de Química}
 
-% PDF settings
-\hypersetup
-{
-    pdfauthor={\authorName},
-    pdfsubject={\doctitle},
-    pdfkeywords={\keywords}
-}
+% PDF settings are configured in main.tex via \hypersetup

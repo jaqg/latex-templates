@@ -45,12 +45,10 @@
 \pdfminorversion=7
 \usepackage{pdfpages}
 \usepackage{transparent}
-\usepackage{xifthen}
 \usepackage{calc}
-% \usepackage{caption}
+\usepackage[margin=10pt,labelfont=bf]{caption}
 \usepackage{subcaption}
 \usepackage{wrapfig}
-\usepackage[margin=10pt,labelfont=bf]{caption}
 \usepackage[bottom]{footmisc} % Para evitar que las figuras aparezcan por debajo del footnote
 %
 % --- Tablas ---
@@ -61,7 +59,6 @@
 \usepackage{diagbox}  % diagonal cells: \diagbox[width=3em, height=3em, trim=l]{$n$}{$k$}; check https://ctan.org/pkg/diagbox/
 \usepackage{longtable}
 \usepackage{array}
-\usepackage{xtab}
 \usepackage{multirow}
 \usepackage{colortab}
 \usepackage{bigdelim}
@@ -80,10 +77,10 @@
 \newcommand{\mat}[1]{\boldsymbol{\mathrm{#1}}}
 % \decimalpoint
 \usepackage{mathtools}
-\usepackage{cancel} 
+\usepackage{cancel}
 \usepackage[thinc]{esdiff}
 \usepackage{physics}
-\usepackage{braket}
+% Note: braket removed — \bra, \ket, \braket are provided by physics and mybraket.sty
 \pdfsuppresswarningpagegroup=1
 %
 % --- Química ---
